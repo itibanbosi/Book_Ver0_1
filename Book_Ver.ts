@@ -96,7 +96,7 @@ namespace eureka_blocks {
         return pins.digitalReadPin(DigitalPin.P16);
   }
 
-  //% color="#94e46d" weght=75 blockId=eureka_denkiwhite block="白LED |%mode|" group="3_電気の利用ユニット"
+  //% color="#e7e371" weight=75 blockId=eureka_denkiwhite block="白LED |%mode|" group="3_電気の利用ユニット"
   export function eureka_denkiwhite(mode: onoff) {
 
         if (mode == onoff.ON) {
@@ -106,7 +106,7 @@ namespace eureka_blocks {
         }
     }
 
-  //% color="#707070" weight=58 blockId=eureka_relay block="ﾘﾚｰ(ﾃﾞｼﾞﾀﾙ出力) |%mode|" group="4_ユーレカ装置"
+  //% color="#f356d4" weight=58 blockId=eureka_relay block="ﾘﾚｰ(ﾃﾞｼﾞﾀﾙ出力) |%mode|" group="4_ユーレカ装置"
   export function eureka_relay(mode: onoff) {
         if (mode == onoff.ON) {
           return pins.digitalWritePin(DigitalPin.P1, 1);
@@ -115,7 +115,7 @@ namespace eureka_blocks {
         }
   }
 
-  //% color="#525290" weight=56 blockId=eureka_relay_2 block="ﾘﾚｰ(ｱﾅﾛｸﾞ出力) |%limit| |%syuturyoku|" group="4_ユーレカ装置"
+  //% color="#f356d4" weight=56 blockId=eureka_relay_2 block="ﾘﾚｰ(ｱﾅﾛｸﾞ出力) |%limit| |%syuturyoku|" group="4_ユーレカ装置"
   //% syuturyoku.min=0 syuturyoku.max=1023
   export function eureka_relay_2(syuturyoku: number) {
         return pins.analogWritePin(AnalogPin.P1, syuturyoku);
