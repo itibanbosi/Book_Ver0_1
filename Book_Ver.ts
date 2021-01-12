@@ -65,14 +65,13 @@ namespace eureka_blocks {
 
   //% color="#009A00"  weight=80 block="光ｾﾝｻ値 |%limit| より暗い" group="3_電気の利用ユニット"
   //% limit.min=0 limit.max=100
-  export function decideLight(limit: number): boolean {
+  export function decideLight(limit: number){
 
         if ((pins.analogReadPin(AnalogPin.P1) / 1023) * 100 < limit) {
           return true;
         } else {
           return false;
         }
-        break;
     }
 
 
@@ -89,8 +88,6 @@ namespace eureka_blocks {
         } else {
           return false;
         }
-        break;
-
   }
 
   //% color="#009A00"  weight=77 blockId=eureka_denkihuman block="人感ｾﾝｻ値" group="3_電気の利用ユニット"
