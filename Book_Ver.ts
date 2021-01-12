@@ -106,7 +106,7 @@ namespace eureka_blocks {
         }
     }
 
-  //% color="#525290" weight=58 blockId=eureka_relay block="ﾘﾚｰ(ﾃﾞｼﾞﾀﾙ出力) |%mode|" group="4_ユーレカ装置"
+  //% color="#606060" weight=58 blockId=eureka_relay block="ﾘﾚｰ(ﾃﾞｼﾞﾀﾙ出力) |%mode|" group="4_ユーレカ装置"
   export function eureka_relay(mode: onoff) {
         if (mode == onoff.ON) {
           return pins.digitalWritePin(DigitalPin.P1, 1);
