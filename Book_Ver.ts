@@ -12,7 +12,7 @@ enum etc {
 
 
 
-//% color="#74ad1d" block="ﾕｰﾚｶ_Book_Ver"
+//% color="#74ad1d" block="ﾕｰﾚｶ_ICT_Book"
 namespace eureka_blocks {
 
     //% blockId=eureka_buz_set
