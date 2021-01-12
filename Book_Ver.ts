@@ -109,16 +109,16 @@ namespace eureka_blocks {
   //% color="#e439b6" weight=58 blockId=eureka_relay block="ﾘﾚｰ(ﾃﾞｼﾞﾀﾙ出力) |%mode|" group="4_ユーレカ装置"
   export function eureka_relay(mode: onoff) {
         if (mode == onoff.ON) {
-          return pins.digitalWritePin(DigitalPin.P1, 1);
+          return pins.digitalWritePin(DigitalPin.P15, 1);
         } else {
-          return pins.digitalWritePin(DigitalPin.P1, 0);
+          return pins.digitalWritePin(DigitalPin.P15, 0);
         }
   }
 
   //% color="#e439b6" weight=56 blockId=eureka_relay_2 block="ﾘﾚｰ(ｱﾅﾛｸﾞ出力) |%limit| |%syuturyoku|" group="4_ユーレカ装置"
   //% syuturyoku.min=0 syuturyoku.max=1023
   export function eureka_relay_2(syuturyoku: number) {
-        return pins.analogWritePin(AnalogPin.P1, syuturyoku);
+        return pins.analogWritePin(AnalogPin.P15, syuturyoku);
   }
 
 }
